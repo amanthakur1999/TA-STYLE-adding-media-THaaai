@@ -1,0 +1,431 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custum css*/
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Nunito Sans", sans-serif;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-sb-ac {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.brand {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+.header {
+  position: absolute;
+  z-index: 99;
+  padding: 12px 0;
+  width: 100%;
+  margin-top: 25px;
+}
+.header-parent .nav-menu {
+  margin-left: 130px;
+}
+.nav-menu a {
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+.icon a {
+  text-decoration: none;
+  margin-left: 25px;
+  text-align: end;
+  color: #fff;
+}
+.btn {
+  padding: 15px 25px;
+  background-color: #cf3732;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 16px;
+}
+.hero {
+  position: absolute;
+  background: linear-gradient(to right, #428be6dc, #66dd56c0),
+    url(./assets/home-bg.jpg) no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.hero-heading {
+  width: 40%;
+  color: white;
+}
+.hero-heading h2 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.hero-text-margin {
+  margin-top: 27px;
+}
+.parent-box {
+  margin-top: 280px;
+}
+.start-btn {
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 12px 23px;
+  color: #fff;
+  border-radius: 26px;
+  font-size: 15px;
+}
+.hero-text {
+  margin-left: 30px;
+  font-size: 14px;
+}
+.hero-text p {
+  font-size: 14px;
+}
+.introduce {
+  position: relative;
+
+  padding: 100px 0;
+}
+.progress {
+  width: 85%;
+  height: 3px;
+  background-color: black;
+  margin-top: 10px;
+}
+.progress-2 {
+  width: 90%;
+}
+.progress-3 {
+  width: 75%;
+}
+.progress-4 {
+  width: 70%;
+}
+.margin {
+  margin-top: 20px;
+}
+
+.introduce-heading {
+  width: 35%;
+}
+.introduce-heading h2 {
+  font-size: 30px;
+  padding-bottom: 13px;
+}
+.introduce-heading p {
+  font-size: 16px;
+  color: rgb(133, 129, 129);
+}
+.span {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(168, 164, 164);
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.progress-bar {
+  width: 20%;
+  font-size: 15px;
+  font-size: 700;
+  line-height: 2;
+  margin-left: 70px;
+}
+
+.about-img {
+  width: 30%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.blog {
+  background-color: #efefef;
+  padding: 70px 0;
+}
+.empty {
+  width: 100%;
+  height: 100vh;
+}
+.blog-heading {
+  text-align: center;
+  font-size: 30px;
+}
+.blog-box {
+  width: 47%;
+  background-color: #ffffff;
+  margin: 17px;
+  box-shadow: 5px 5px 5px 5px rgba(158, 154, 154, 0.068);
+  border-radius: 3px;
+}
+.blog-box img {
+  width: 40%;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.blog-box h4 {
+  font-size: 13px;
+  color: red;
+}
+.blog-box h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.blog-box p {
+  font-size: 15px;
+  color: rgb(105, 102, 102);
+}
+.button {
+  font-size: 14px;
+  padding: 15px 24px;
+  border-radius: 25px;
+  border-style: none;
+  background-color: #efefef;
+  color: rgb(82, 79, 79);
+  margin-top: 20px;
+}
+.blog-text {
+  padding: 0 35px;
+}
+.work-img {
+  width: 22%;
+}
+.work-img img {
+  width: 100%;
+  margin-left: 30px;
+}
+.work {
+  padding: 70px 0;
+}
+.contact {
+  padding: 70px;
+  background: linear-gradient(to right, #217cdf, #7bed6a);
+  color: white;
+}
+.form {
+  width: 65%;
+  margin: 0 auto;
+}
+input {
+  width: 46%;
+  height: 50px;
+  border-style: none;
+  margin-bottom: 10px;
+  margin-left: 19px;
+  padding: 0 8px;
+  border-radius: 7px;
+  font-size: 14px;
+}
+#message {
+  width: 95%;
+  margin-left: 20px;
+  border-style: none;
+  border-radius: 7px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+.button-send {
+  padding: 19px 60px;
+  margin-left: 20px;
+  border-style: none;
+  font-size: 16px;
+  border-radius: 25px;
+  color: white;
+  background-color: #cf3732;
+  margin-top: 15px;
+}
+.google-map {
+  border-radius: 50%;
+}
+.footer {
+  background: linear-gradient(to right, #404040, #020202);
+  color: white;
+  padding: 80px;
+}
+.flex-footer {
+  display: flex;
+}
+.company {
+  margin-left: 80px;
+}
+.hydro-company {
+  width: 40%;
+}
+.hydro-company p{
+    font-size:16px;
+}
+.about-box {
+  margin-left: 60px;
+}
+.flex-footer h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.flex-footer h5 {
+  font-size: 15px;
+  color: #d8d8d8;
+}
+.copyright {
+  font-size: 16px;
+  margin-top: 50px;
+  border-top: 1px solid white;
+  padding-top: 30px;
+}
+.copyright h4 {
+  margin-left: 320px;
+}
+.copyright .icon {
+  margin-left: 40px;
+}
